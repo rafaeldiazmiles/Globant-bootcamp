@@ -1,4 +1,4 @@
 # Global bootcamp
-The 2nd part of the Golang bootcamp
+Golang Globant bootcamp
 
-https://github.com/josnelihurt/golang-bootcamp/wiki/Part-2:-Language-basics
+https://github.com/josnelihurt/golang-bootcamp/wiki/
