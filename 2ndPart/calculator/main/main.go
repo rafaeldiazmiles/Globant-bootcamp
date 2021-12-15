@@ -1,10 +1,11 @@
 package main
 
 import (
-	"calculor"
 	"fmt"
 	"os"
 	"strconv"
+
+	calculor "github.com/Ksualboy/Globant-bootcamp/2ndPart/calculator/calculor"
 )
 
 func main() {
