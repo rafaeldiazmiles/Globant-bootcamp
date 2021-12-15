@@ -18,7 +18,7 @@ func Mul(a, b float64) float64 {
 
 func Div(a, b float64) (float64, error) {
 	if b == 0 {
-		return 0, errors.New("Dividing by 0?? Are you mad???")
+		return 0, errors.New("dividing by 0?? are you planning on killing us???")
 	}
 
 	return a / b, nil

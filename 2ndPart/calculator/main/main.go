@@ -20,9 +20,14 @@ func main() {
 	a, err := strconv.ParseFloat(os.Args[1], 64)
 	b, err2 := strconv.ParseFloat(os.Args[3], 64)
 
+	// Handling parsing errors
 	if err != nil || err2 != nil {
-		fmt.Println("error 1:", err)
-		fmt.Println("error 2:", err2)
+		if err != nil {
+			fmt.Println("error 1:", err)
+		}
+		if err2 != nil {
+			fmt.Println("error 2:", err2)
+		}
 		return
 	}
 
@@ -45,5 +50,5 @@ func main() {
 		return
 	}
 
-	fmt.Println("Result:", result)
+	fmt.Printf("Result: %.3f\n", result)
 }
