@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	errors "../errors"
+	errors "github.com/Ksualboy/Globant-bootcamp/2ndPart/errorsPackage/errors"
 )
 
 func main() {
@@ -61,8 +61,12 @@ func main() {
 		fmt.Printf("\n\nPress enter to try again")
 		fmt.Scanf("%s")
 	}
-	fmt.Printf("\n\nExiting...")
-	time.Sleep(time.Second * 4)
+	fmt.Printf("\n\nExiting")
+	for i := 0; i < 3; i++ {
+		time.Sleep(time.Millisecond * 1333)
+		fmt.Printf(".")
+	}
+
 	msg := "Ok now it's time to guess which type of error you got"
 
 	errorTypes := map[int]string{1: "Internal", 2: "ThirdParty", 3: "Other"}
